@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library - Mississauga Library</title>
+    <link rel="stylesheet" href="style.css" type="text/css"  />
+    <link rel="icon" type="image/png" href="icon.png">
+    </head>
+    <body>
+            <header>
+                <script src="js/jquery-3.5.1.min.js"></script>
+                <script src="js/typed.min.js"></script>
+                <script src="js/all.min.js"></script>
+                <script src="js/java.js"></script>
+                <script>
+                    //show and hide dropdown list item on button click
+                    function show_hide() {
+                        var click = document.getElementById("list-items");
+                        if (click.style.display === "none") {
+                        click.style.display = "block";
+                        } else {
+                        click.style.display = "none";
+                        }
+                    }
+                </script>
+                <div class="TopHeader">
+                <p class="brand">Mississauga</p>
+                <div id="top"></div>
+                </div>
+                <div class="libnav">
+                <p class="library"><img src="Library.svg" alt="" /></p>
+                </div>
+                
+                <nav class="nav">
+                    
+                    <div class="menuobject"><a class="a" href="https://miss.ent.sirsidynix.net/client/en_CA/mlsathome">Catalogue</a></div>
+                    <div class="menuobject"><a class="a" href="https://www.mississauga.ca/library/locations/">Locations</a></div>
+                    <div class="menuobject">
+                            
+                            <button onclick="show_hide()" class="button">Books and media</button>
+                                <div id="list-items">
+                                    <a href="#"> Tutorials </a>
+                                    <a href="#"> About Us </a>
+                                </div>
+                    </div>
+                    <div class="menuobject"><a class="a" href="">Using the Library</a></div>
+                    <div class="menuobject"><a class="a" href="https://www.mississauga.ca/library/programs/">Programs</a></div>
+                    <div class="menuobject"><a class="a" href="">Research and learn</a></div>
+                
+                </nav>
+                <nav class="search">
+                    
+                            <div class="searchbox">
+                            <input type="text" class="searchTXT" placeholder="Search library">
+                            <img src="./images/magnifire.png" alt="magnifire" class="magnifire">
+                            
+                            
+                    </div>
+                    <div>
+                        <form action="" class="form">
+                        <input type="radio" id="radiobtn1"  name="m1" >
+                        <label for="" class="radiotxt">Catalogue</label>
+                        
+                        <br>
+                        <input type="radio" id="radiobtn2" name="m1">
+                        <label for="" class="radiotxt">Library website</label>
+                        
+                    </form>  
+                    </div>
+                </nav>
+            </header>
+        <main>
+                <div>
+                    <div class="reqbox">
+                    <div class="topreqtext">
+                        <p id="reqtextmain">Top request</p>
+                </div>
+                <div class="buttomreqtext">
+                        <p id="reqtextmid">Account login</p>
+                        <p id="reqtextmid">A-Z Digital resources</p>
+                        <p id="reqtextmid">New printing system</p>
+                        <p id="reqtextmid">Get a library card</p>
+                        <p id="reqtextmid">eNews signup</p>
+                        <p id="reqtextlast" >Recommended reading</p>
+                </div>
+                </div>
+                    <img class="image" src="./images/MainBack.jpg" alt="" />
+                </div>
+            </div>
+            
+            <div class="category">
+                <div class="ObjectBlock">
+                    <div class="object">
+                        <img src="./images/Location2.svg" alt="Location and hours" class="locationimg">
+                        <p class="obtext">Location and hours</p>
+                    </div>
+                    <div class="object">
+                        <img src="./images/Books-eBooks-and-audiobooks.svg" alt="Books, ebooks, audiobooks" class="bookimg">
+                        <p class="obtext">Books, ebooks, audiobooks</p>
+                    </div>
+                    <div class="object">
+                        <img src="./images/Movies-and-TV.svg" alt="Movies and TV" class="movieimg">
+                        <p class="obtext">Movies and TV</p>
+                    </div><div class="object">
+                        <img src="./images/Music-and-video-games.svg" alt="Music" class="musicimg">
+                        <p class="obtext">Music</p>
+                    </div>
+                    <div class="object">
+                        <img src="./images/News-and-magazines.svg" alt="Newspaper and magazines" class="newsimg">
+                        <p class="obtext">Newspaper and magazines</p>
+                    </div>
+                    <div class="object">
+                        <img src="./images/Membership.svg" alt="Using the library" class="usingimg">
+                        <p class="obtext">Using the library</p>
+                    </div>
+                    <div class="object">
+                        <img src="./images/Programs-and-events.svg" alt="Programs" class="programimg">
+                        <p class="obtext">Programs</p>
+                    </div>
+                    <div class="object">
+                        <img src="./images/Research-and-learning.svg" alt="Research and learn" class="researchimg">
+                        <p class="obtext">Research and learn</p>
+                    </div>
+                    </div>
+                    <br id="break">
+                    
+            <br>
+            <div class="spacer"></div>
+            <br>
+
+            <!-- start top -->
+            <section id="services">
+                <div class="overlay">
+                    <div class="containerr">
+                        <div class="service-title">
+                            <h2>Top book collections</h2>
+                            <div class="tab-button">
+                                <ul>
+                                    <li id="tab-one" class="active active2">Adult</li>
+                                    <li id="tab-two">Children</li>
+                                    <li id="tab-three">Youth</li>
+                                    <li id="tab-four">Pride</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="service">
+                                <div class="tab-content">
+                                    <div class="tab hide active" id="tab-one-content">
+                                        <div class="content">
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528568_x.jpg" alt="Forest">
+                                                </a>
+        
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+        
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528569_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528570_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528571_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528572_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab hide" id="tab-two-content">
+                                        <div class="content">
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528573_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528574_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528575_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528576_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528577_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab hide" id="tab-three-content">
+                                        <div class="content">
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528568_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528574_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528570_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528569_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528571_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab hide" id="tab-four-content">
+                                        <div class="content">
+        
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528577_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528574_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528572_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528575_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-img">
+                                                <a target="_blank" href="#">
+                                                    <img class="top-img" src="images/photo_5796230238114528573_x.jpg" alt="Forest">
+                                                </a>
+                                                <div class="maindesc">
+                                                    <div class="alldesc1">
+                                                        <a href="" class="desc">Mastering Art</a>
+                                                    </div>
+        
+                                                    <div class="alldesc2">
+                                                        <a href="" class="desc">Rose, Jevana</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- end top -->
+            <br>
+
+            <section class="programs">
+                <div class="programsblock">
+                    <h2>    
+                        <strong>Programs</strong>
+                    </h2>
+                </div>
+                    <br>
+                    <section class="program">
+                        <!-- part1 -->
+                        <div class="main-p-block">
+                        <div class="pic">
+                            <img class="pblockimg" src="images/Drew-Hayden.png" alt="" />
+                        </div>
+                
+                        <div class="txt">
+                            <div class="pblocktxt">
+                            <span class="main-title-txt">
+                                <strong>Ancestral Voices</strong>
+                            </span>
+                            <br />
+                            <p>
+                                Join us for a visit with award winning Ojibway playwright,
+                                journalist, writer, filmmaker and stand-up comedian, Drew Hayden
+                                Taylor on June 14.
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                
+                        <!-- part2 -->
+                        <div class="main-p-block">
+                        <div class="pic">
+                            <img class="pblockimg" src="images/Caetano_Cody_Cropped.jpg" alt="" />
+                        </div>
+                
+                        <div class="txt">
+                            <div class="pblocktxt">
+                            <span class="main-title-txt">
+                                <strong>
+                                Author Talks
+                                </strong>
+                            </span>
+                            <br />
+                            <p>
+                                The series features a wide range of talented
+                                writers. Hear authors read from their books,
+                                ask questions, learn about the writing process. 
+                                Coming up June 21: Cody Caetano. 
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                
+                        <!-- part3 -->
+                        <div class="main-p-block">
+                        <div class="pic">
+                            <img class="pblockimg" src="images/iStock.jpg" alt="" />
+                        </div>
+                
+                        <div class="txt">
+                            <div class="pblocktxt">
+                            <span class="main-title-txt">
+                                <strong>
+                                TD Summer Reading Club
+                            </strong>
+                            </span>
+                            <br />
+                            <p>
+                                Register and participate in this year’s 
+                                club in person at all Mississauga Library
+                                locations or online through the TD Summer 
+                                Reading Club website. Registration 
+                                begins on Monday, June 12. Great prizes!
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                    <div class="viewbtn">
+                        <p id="vbd">View all programs <span id="sign">&gt</span></p>
+                    </div>
+            </section>
+            <br>
+            <br>
+            <div class="spacer"></div>
+            <br>
+                <section class="Featured">
+                    <div class="Featuredblock">
+                        <h2>    
+                            <strong>Featured</strong>
+                        </h2>
+                    </div>
+                    <section class="future">
+                        <!-- part1 -->
+                    <div class="main-f-block">
+                        <div>
+                        <img class="fblockimg" src="images/kanopy.jpg" alt="" />
+                        </div>
+
+                        <div class="txt2">
+                        <div class="fblocktxt">
+                            <span class="main-title-txt2">
+                            <strong>
+                                Kanopy
+                            </strong>
+                            </span>
+                            <br />
+                            <p>
+                                Now streaming on Kanopy. Instantly access over
+                                30,000 movies and documentaries on your computer,
+                                TV or mobile device. Free with your library card.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                            <!-- part2 -->
+                    <div class="main-f-block">
+                        <div>
+                        <img class="fblockimg" src="images/local history.jpg" alt="" />
+                        </div>
+                
+                        <div class="txt2">
+                        <div class="fblocktxt">
+                            <span class="main-title-txt2">
+                            <strong>Local History</strong>
+                            </span>
+                            <br />
+                            <p>
+                                Research using a variety of resources and databases including images, family
+                                records, biographies, books, information files, newspapers and more.
+                                Need help?
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                            <!-- part3 -->
+                    <div class="main-f-block">
+                        <div>
+                        <img class="fblockimg" src="images/video games.jpg" alt="" />
+                        </div>
+                        <div class="txt2">
+                        <div class="fblocktxt">
+                            <span class="main-title-txt2">
+                            <strong>Video Games</strong>
+                            </span>
+                            <br />
+                            <p>
+                                Borrow from a wide selection of video games for
+                                PlayStation, Xbox and Nintendo.
+                                Free with your library card. 
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            
+        </main>
+        <br>
+
+        <footer class="footer">
+
+            <div class="translate">
+                
+                <div >
+                    <p id="trtitle">Translate this page</p>
+                </div>
+                <label for="Lng"></label>
+                <select name="Language" id="selectbox" onchange="MyJavaScript(this)">
+                <option value="select">Select Language</option>
+                <option value="English">English</option>
+                <option value="Persian">Persian</option>
+                </select>
+                <div>
+                    <p id="trdesc">Powered by <span  style="color:#69abf2;">G</span><span style="color:#cd3e3e;">o</span><span style="color:#e7b343;">o</span><span style="color:#69abf2;">g</span><span style="color:#1eb510;">l</span><span style="color:#cd3e3e;">e</span> Translate</p>
+                </div>
+            </div>
+            <div class="contactlist">
+                
+                <div >
+                    <p id="about">About the library</p>
+                </div>
+                <div class="contact-obblock">
+                    <div class="obsetting"> <a href="https://www.mississauga.ca/library/contact-the-library/" class="footerob">Contact the library</a> </div>
+                    <div class="obsetting"> <a href="https://www.mississauga.ca/library/contact-the-library/library-newsletters/" class="footerob">Newsletters</a> </div>
+                    <div class="obsetting"> <a href="https://www.mississauga.ca/library/library-board/" class="footerob">Library Board</a> </div>
+                    <div class="obsetting"> <a href="https://www.mississauga.ca/library/library-policies/" class="footerob">Policies</a> </div>
+                    <div class="obsetting"> <a href="https://www.mississauga.ca/library/library-jobs-and-volunteer/" class="footerob">Jobs and volunteer</a> </div>
+                    <div class="obsetting"> <a href="https://www.mississauga.ca/library/donate-to-the-library/" class="footerob">Donate</a> </div>
+                    <div class="obsetting"> <a href="https://www.mississauga.ca/library/land-acknowledgement-statement/" class="footerob">Land acknowledgement</a> </div>
+                </div>
+                
+            </div>
+        
+            <div class="social">
+                
+                <div >
+                    <p id="socialtxt">Social</p>
+                </div>
+                <div class="social-obblock">
+                        <div class="sobsetting">
+                            <img class="socialimg" src="images/twitter.png" alt="">
+                            <p class="stxt"><a class="sociala" href="https://twitter.com/mississaugalib">Twitter</a></p>
+                        </div>
+                        <div class="sobsetting">
+                            <img class="socialimg" src="images/facebook.png" alt="">
+                            <p class="stxt"><a class="sociala" href="https://www.facebook.com/mississaugalibrary">Facebook</a></p>
+                        </div>
+                        <div class="sobsetting">
+                            <img class="socialimg" src="images/instagram.png" alt="">
+                            <p class="stxt"><a class="sociala" href="https://www.instagram.com/mississaugalib/">Instagram</a></p>
+                            
+                        </div>
+                        <div class="sobsetting">
+                            <img class="socialimg" src="images/youtube.png" alt="">
+                            <p class="stxt"><a class="sociala" href="https://www.youtube.com/MississaugaLibrary">Youtube</a></p>
+                            
+                        </div>
+                </div>
+
+            </div>
+                <br>
+                <div class="footerline">
+            </div>
+            <div class="enddata">
+                <p id= data1>© City of Mississauga 2019 - 2023</p>
+                <p id= data2> <a class="enda" href="https://www.mississauga.ca/home/privacy-and-terms/">Privacy and terms</a> </p>
+                <p id= data3>|</p>
+                <p id= data4> <a href="https://www.mississauga.ca/home/accessibility/" class="enda">Accessibility</a> </p>
+            </div>
+                
+        </footer>
+        <div class="go-up">
+                <a href="#top"><img id="imgarrow"  src="images/arrowup.png" alt="arrow up"></a>                
+                <p id="gouptxt"><a style="text-decoration: none; color: #000;" href="#top">Back to top</a></p>
+        </div>
+        <script>
+                        $('.tab-button').on('click', 'li', function() {
+                        let tabmenu = $(this).attr('id');
+                        $(this).addClass('active2').siblings().removeClass('active2');
+
+                        })
+                        $('.tab-button').on('click', 'li', function() {
+                        let tabmenu = $(this).attr('id');
+                        $(this).addClass('active').siblings().removeClass('active');
+                        $('#' + tabmenu + '-content').addClass('active').siblings().removeClass('active');
+                        })
+        </script>
+    </body>
+</html>
