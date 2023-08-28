@@ -6,7 +6,7 @@ Welcome to the Library Website Project! This is a web development endeavor aimed
 
 In this project, my main objective is to achieve a deeper understanding and gain more experience in web development. By taking on the challenge of designing a library website, I will have the opportunity to apply my skills in HTML, CSS, and JavaScript within a practical context. Through this journey, I'll encounter real-world challenges including responsive design, user interaction, and data management, all of which will significantly contribute to my growth as a web developer. This project will allow me to experiment with various technologies and techniques, expanding my skill set and boosting my confidence in tackling more intricate web development projects in the future.
 
-##[Preview Project](https://mr-javadian.github.io/Mississauga-Library/)
+## [Preview Project](https://mr-javadian.github.io/Mississauga-Library/)
 
 ## Enhancing Design Skills
 
